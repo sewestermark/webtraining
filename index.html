@@ -1,66 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-    body {background-color:white}
-        #firstDiv {
-          background-color:red;
-          height: 500px;
-          width: 500px;
-        }
-        #firstDiv:hover {
-          background-color:green;
-        }
-tr:hover{
-  background-color: blue;
-} 
-
-    </style>
-<title>Page Title</title>
-</head>
-<body>
-    <div id="firstDiv">
-        <h1>This is a Heading</h1>
-    <button id="guzik">Guzik</button>
-    <p id="demo"></p>
-    </div>
-    <table id="firstTable">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Michael</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Kowalski</td>
-            <td>32</td>
-          </tr>
-          <tr>
-              <td>Po</td>
-              <td>Jackson</td>
-              <td>21</td>
-            </tr>
-            <tr>
-                <td>Agent</td>
-                <td>Smith</td>
-                <td>35</td>
-              </tr>
-      </table>
-    <p>This is a paragraph.</p>
+  <head>
+  <style>
+      body {
+        background-color:bisque;
+        display: flex;
+      }
+      div#container1 {
+        height: 300px;
+        width: 300px;
+        background-color: cadetblue;
+        display: inline-block;  /* zeby elementy DIV wyswietlaly sie w jednej linii */
+      }
+      div#container2 {
+        margin-left: 5px;
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        background-color: darkolivegreen;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="container1"></div>
+    <div id="container2"></div>
     <script>
-            document.getElementById("guzik").addEventListener("click", function(){
-              document.getElementById("demo").innerHTML = "Hello World";
-            });
-</script>
-</body>
+      var data = [
+        {label: 'guzik 1', color: 'firebrick', id: 'btn1'}, // pojedynczy obiekt
+        {label: 'guzik 2', color: 'lightgreen', id: 'btn2'},
+        {label: 'guzik 3', color: 'coral', id: 'btn3'},
+        {label: 'guzik 4', color: 'violet', id: 'btn4'}
+      ]
+
+		/*znajdź DIV o id 'container1' i przypisz go do zmiennej 'destinationDIV'*/
+
+		/*przeiteruj (loop/ iterate/ etc) po tablicy 'data' i wypisz w konsoli tekst dla kazdego
+		z obiektow w formacie  label + " " + color + " " + id. Dla 1 obiektu wypisz w konsoli 1 string. Konsole zobaczysz klikajac F12 w przegladarce, zakladka 'console'.
+		*/
+
+
+
+    </script>
+  </body>
 </html>
